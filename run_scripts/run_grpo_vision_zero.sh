@@ -1,6 +1,9 @@
 #!/bin/bash
-IMAGES_DIR="/home/colligo/clevr-dataset-gen/output/replacement_images"
-SCENES_DIR="/home/colligo/clevr-dataset-gen/output/replacement_scenes"
+IMAGES_DIR="Vision-Zero-clevr-dataset/output/replacement_images"
+SCENES_DIR="Vision-Zero-clevr-dataset/output/replacement_scenes"
+MODEL = Qwen/Qwen2.5-VL-7B-Instruct
+OUTPUT_BASE_DIR="output/"
+RUN_NAME="Qwen2.5-VL-7B-GRPO-Vision-Zero"
 
 
 cd src/open-r1-multimodal
@@ -9,7 +12,7 @@ export PYTHONPATH="${PYTHONPATH}:$(pwd)/src"
 export DEBUG_MODE="true"
 export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
 
-RUN_NAME="Qwen2.5-VL-7B-GRPO-Vision-Zero"
+
 export LOG_PATH="./debug_log_$RUN_NAME.txt"
 
 # Interactive training configuration
@@ -26,7 +29,7 @@ INTERACTIVE_CYCLE_LENGTH=1      # Number of steps per phase (adjustable paramete
 
 
 # Create output directory on local SSD if it doesn't exist
-OUTPUT_BASE_DIR="/mnt/localssd/output"
+
 mkdir -p $OUTPUT_BASE_DIR/$RUN_NAME
 
 echo "Starting Interactive CLEVR Spot-the-Difference Training..."
@@ -65,7 +68,7 @@ torchrun --nproc_per_node="8" \
     src/open_r1/grpo_jsonl.py \
     --deepspeed local_scripts/zero3_model_parallel.json \
     --output_dir $OUTPUT_BASE_DIR/$RUN_NAME \
-    --model_name_or_path /mnt/localssd/models/Qwen2.5-VL-7B-Instruct \
+    --model_name_or_path MODEL \
     --dataset_name "dynamic_clevr_spotdiff" \
     --use_dynamic_dataset \
     --epoch_size $EPOCH_SIZE \
