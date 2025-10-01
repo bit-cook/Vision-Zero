@@ -46,7 +46,7 @@ Despite using label-free data, Vision-Zero achieves state-of-the-art performance
 
 
 ## 🛠️ Setup
-
+📢  This repo is based on [`vlm-r1`](https://github.com/om-ai-lab/VLM-R1), thanks for their contribution. 
 ```bash
 conda create -n vision-zero python=3.10
 conda activate vision-zero
