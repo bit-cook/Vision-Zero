@@ -203,6 +203,7 @@ If you find Vision-Zero useful in your research, please consider citing our pape
 <div align="center">
 
 **🌟 Star this repo if you find it helpful!**
+
 *Made with ❤️ by the Vision-Zero team*
 
 </div>
