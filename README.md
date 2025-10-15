@@ -62,7 +62,7 @@ We introduce Iterative Self-Play Policy Optimization (Iterative-SPO), a novel tr
 
 | Component | Status | Description |
 |-----------|---------|-------------|
-| 🤖 **Models** | ✅ Available | Pre-trained models on Qwen2.5-VL-7B, InternVL3-8B, InternVL3-14B |
+| 🤖 **Models** | ✅ Available | Trained models on Qwen2.5-VL-7B, InternVL3-8B, InternVL3-14B |
 | 📊 **CLEVR Dataset** | ✅ Available | Complete CLEVR-based training dataset |
 | 🛠️ **Training Code** | ✅ Available | Full open-source training pipeline |
 | 📈 **Chart Dataset** | 🚧 Coming Soon | Chart-based dataset for enhanced reasoning |
@@ -82,7 +82,7 @@ conda create -n vision-zero python=3.10
 conda activate vision-zero
 bash setup.sh
 
-# 3. Download a pre-trained model
+# 3. Download a Trained model
 # Choose from available models in the table below
 
 # 4. Start training or inference
