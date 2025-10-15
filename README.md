@@ -93,7 +93,7 @@ bash run_scripts/run_grpo_vision_zero.sh
 
 ## 🤖 Models & Dataset
 
-### 🔬 Pre-trained Models
+### 🔬 Trained Models
 
 <div align="center">
 
