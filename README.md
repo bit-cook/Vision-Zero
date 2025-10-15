@@ -203,10 +203,6 @@ If you find Vision-Zero useful in your research, please consider citing our pape
 <div align="center">
 
 **🌟 Star this repo if you find it helpful!**
-
-[![GitHub stars](https://img.shields.io/github/stars/your-repo/vision-zero?style=social)](https://github.com/your-repo/vision-zero)
-[![GitHub forks](https://img.shields.io/github/forks/your-repo/vision-zero?style=social)](https://github.com/your-repo/vision-zero)
-
 *Made with ❤️ by the Vision-Zero team*
 
 </div>
