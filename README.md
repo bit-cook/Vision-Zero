@@ -112,6 +112,8 @@ bash run_scripts/run_grpo_vision_zero.sh
 | Dataset Type | Description | Link |
 |--------------|-------------|------|
 | **CLEVR-based** | Synthetic scenes for logical reasoning | [![Dataset](https://img.shields.io/badge/🤗-Dataset-green)](https://huggingface.co/datasets/Qinsi1/Vision-Zero-clevr-dataset) |
+| **Chart-based** | Chart data for document understanding | [![Dataset](https://img.shields.io/badge/🤗-Dataset-green)](https://huggingface.co/datasets/Qinsi1/Vision-Zero-chart-dataset) |
+| **RealWorld** | Real-world image data | [![Dataset](https://img.shields.io/badge/🤗-Dataset-green)](https://huggingface.co/datasets/Qinsi1/Vision-Zero-realworld-dataset) |
 
 
 
@@ -143,8 +145,8 @@ bash setup.sh
 
 Download one of the available datasets or prepare your own:
 - **CLEVR-based**: Available now ✅
-- **Chart-based**: Coming soon 🚧  
-- **Real-World**: Coming soon 🚧
+- **Chart-based**: Available now ✅
+- **Real-World**: Available now ✅
 
 Configure your training setup in `run_scripts/run_grpo_vision_zero.sh`:
 
