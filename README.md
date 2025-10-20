@@ -163,7 +163,7 @@ bash run_scripts/run_grpo_vision_zero.sh
 
 ### 🔬 Trained Models
 
-<div align="center">
+
 
 | Model Family | Size | Dataset | HuggingFace Link |
 |--------------|------|---------|------------------|
@@ -173,7 +173,7 @@ bash run_scripts/run_grpo_vision_zero.sh
 | **InternVL3** | 8B | CLEVR | [![Model](https://img.shields.io/badge/🤗-Model-blue)](https://huggingface.co/Qinsi1/Vision-Zero-InternVL3-8B-Clevr) |
 | **InternVL3** | 14B | CLEVR | [![Model](https://img.shields.io/badge/🤗-Model-blue)](https://huggingface.co/Qinsi1/Vision-Zero-InternVL3-14B-Clevr) |
 
-</div>
+
 
 ### 📊 Datasets
 
