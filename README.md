@@ -17,6 +17,7 @@
 ## 📋 Table of Contents
 
 - [🎯 Overview](#-overview)
+- [📊 Performance Results](#-performance-results)
 - [🚀 Quick Start](#-quick-start)
 - [🤖 Models & Dataset](#-models--dataset)
 - [🛠️ Setup](#️-setup)
@@ -31,6 +32,75 @@
 Although reinforcement learning (RL) can effectively enhance the reasoning capabilities of vision–language models (VLMs), current methods remain heavily dependent on labor-intensive datasets that require extensive manual construction and verification, leading to extremely high training costs and consequently constraining the practical deployment of VLMs. 
 
 To address this challenge, we propose **Vision-Zero**, *a domain-agnostic framework enabling VLM self-improvement through competitive visual games generated from arbitrary image pairs.*
+
+> 🏆 **Achievement:** Despite using label-free data, Vision-Zero achieves state-of-the-art performance on reasoning, chart question answering, and vision-centric understanding tasks, surpassing other annotation-based methods.
+
+---
+
+## 📊 Performance Results
+
+### 🎖️ Key Achievements
+
+| Metric | Result | Significance |
+|--------|--------|--------------|
+| **Training Data** | 0 human annotations | First zero-human-in-the-loop VLM training paradigm |
+| **vs SOTA (ViGaL)** | +3.4% average | Outperforms best curated-data method |
+| **vs GPT-4o** | Competitive | Matches/exceeds on chart & OCR tasks |
+| **InfoVQA** | +4.2% gain | Largest improvement on chart understanding |
+| **MMVP** | +2.7% gain | Enhanced visual perception capabilities |
+| **Generalization** | 3 domains | Works on CLEVR, Charts, Real-World images |
+
+### 📊 OCR and Chart Understanding Tasks
+
+Vision-Zero demonstrates exceptional performance on OCR, chart, and document understanding tasks, with the Chart-trained variant showing particularly strong improvements:
+
+| Model | AI2D | ChartQA | TextVQA | DocVQA | InfoVQA | OCRBench | SEEDBench2 | Average |
+|-------|------|---------|---------|--------|---------|----------|------------|---------|
+| **Qwen2.5-VL-7B (Baseline)** | 84.7 | 86.1 | 85.5 | 94.8 | 82.3 | 88.3 | 70.4 | 84.6 |
+| **+ Vision-Zero (CLEVR)** | 84.5 | **86.3** | 85.3 | **94.9** | **82.5** | 88.1 | 69.5 | 84.4 |
+| **+ Vision-Zero (Chart)** | **85.8** | **87.2** | **86.4** | **95.9** | **86.5** | **89.0** | **70.9** | **85.9** |
+| **+ Vision-Zero (Real-World)** | 84.8 | **86.3** | 85.4 | **95.2** | 82.3 | **88.5** | 69.8 | 84.6 |
+| **GPT-4o** | 84.4 | 85.7 | 82.2 | 91.1 | 78.2 | 73.9 | 72.0 | 81.1 |
+
+> **Key Insight:** Vision-Zero (Chart) achieves **+4.2% improvement on InfoVQA** and outperforms GPT-4o on most benchmarks, demonstrating that label-free self-play can surpass both supervised baselines and proprietary models.
+
+### 🎯 Vision-Centric Understanding Tasks
+
+Vision-Zero shows consistent improvements on tasks requiring fine-grained visual reasoning:
+
+| Model | RealWorldQA | MMVP | MMStar | BLINK | MuirBench | CRPE | Average |
+|-------|-------------|------|--------|-------|-----------|------|---------|
+| **Qwen2.5-VL-7B (Baseline)** | 68.1 | 76.8 | 64.6 | 55.2 | 58.2 | 76.4 | 66.6 |
+| **+ Vision-Zero (CLEVR)** | 68.5 | **79.2** | **65.2** | **57.2** | **59.4** | **76.9** | **67.7** |
+| **+ Vision-Zero (Chart)** | 68.2 | 77.9 | 64.7 | 56.1 | 58.6 | 76.2 | 66.9 |
+| **+ Vision-Zero (Real-World)** | **68.5** | **79.5** | **65.8** | **57.5** | **59.8** | **77.0** | **68.0** |
+| **GPT-4o** | 75.4 | 86.3 | - | 68.0 | 68.0 | - | - |
+
+**Improvements over baseline:**
+- **MMVP:** +2.7% (Real-World) - Better visual perception
+- **BLINK:** +2.3% (Real-World) - Enhanced visual reasoning
+- **Average:** +1.4% gain with zero human annotations
+
+> **Remarkable Achievement:** Vision-Zero (Real-World) achieves **68.0% average** across vision-centric tasks, representing the **best performance among all 7B open-source models** trained with reasoning-focused methods.
+
+### 🚀 Comparison with State-of-the-Art Methods
+
+Vision-Zero outperforms other recent VLM reasoning methods trained on Qwen2.5-VL-7B:
+
+| Method | Training Data | AI2D | ChartQA | RealWorldQA | MMVP | Average |
+|--------|---------------|------|---------|-------------|------|---------|
+| R1-OneVision-7B | Curated | 82.2 | - | 58.0 | 61.3 | - |
+| MM-Eureka-Qwen-7B | Curated | 84.1 | 77.3 | 66.1 | 74.3 | 75.5 |
+| VLAA-Thinker-7B | Curated | 84.0 | 84.3 | 65.4 | 71.6 | 76.3 |
+| OpenVLThinker-7B | Curated | 81.8 | - | 60.2 | 71.3 | - |
+| ViGaL-Snake+Rotation | Curated | 84.5 | 79.9 | 66.5 | 74.6 | 76.4 |
+| **Vision-Zero (CLEVR)** | **Label-Free** | **84.5** | **86.3** | **68.5** | **79.2** | **79.6** |
+| **Vision-Zero (Chart)** | **Label-Free** | **85.8** | **87.2** | **68.2** | **77.9** | **79.8** |
+| **Vision-Zero (Real-World)** | **Label-Free** | **84.8** | **86.3** | **68.5** | **79.5** | **79.8** |
+
+> **Zero-Annotation Superiority:** Despite using **no human-labeled data**, Vision-Zero variants achieve **+3.4% average improvement** over the best competing method (ViGaL), demonstrating the power of strategic self-play for VLM training.
+
+---
 
 ### ✨ Key Features
 
@@ -55,8 +125,6 @@ We introduce Iterative Self-Play Policy Optimization (Iterative-SPO), a novel tr
 
 </details>
 
-> 🏆 **Achievement:** Despite using label-free data, Vision-Zero achieves state-of-the-art performance on reasoning, chart question answering, and vision-centric understanding tasks, surpassing other annotation-based methods.
-
 
 ### 🎉 Current Release Status
 
@@ -74,7 +142,7 @@ We introduce Iterative Self-Play Policy Optimization (Iterative-SPO), a novel tr
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/your-repo/vision-zero.git
+git clone https://github.com/wangqinsi1/Vision-Zero.git
 cd vision-zero
 
 # 2. Set up environment
@@ -179,6 +247,8 @@ Evaluate your trained model on out-of-distribution tasks using [VLMEvalKit](http
 ```
 
 ---
+
+## 📊 Evaluation
 
 We use [VLMEvalKit](https://github.com/open-compass/VLMEvalKit) for comprehensive model evaluation on out-of-distribution tasks, ensuring robust performance assessment across various benchmarks.
 
