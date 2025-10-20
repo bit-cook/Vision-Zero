@@ -65,8 +65,8 @@ We introduce Iterative Self-Play Policy Optimization (Iterative-SPO), a novel tr
 | 🤖 **Models** | ✅ Available | Trained models on Qwen2.5-VL-7B, InternVL3-8B, InternVL3-14B |
 | 📊 **CLEVR Dataset** | ✅ Available | Complete CLEVR-based training dataset |
 | 🛠️ **Training Code** | ✅ Available | Full open-source training pipeline |
-| 📈 **Chart Dataset** | 🚧 Coming Soon | Chart-based dataset for enhanced reasoning |
-| 🌍 **Real-World Dataset** | 🚧 Coming Soon | Real-world image dataset for diverse scenarios |
+| 📈 **Chart Dataset** | ✅ Available | Chart-based dataset for enhanced reasoning |
+| 🌍 **Real-World Dataset** | ✅ Available | Real-world image dataset for diverse scenarios |
 
 ---
 
