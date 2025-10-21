@@ -8,7 +8,7 @@
 [![Models](https://img.shields.io/badge/🤗-Models-yellow)](https://huggingface.co/Qinsi1)
 [![Dataset](https://img.shields.io/badge/🤗-Dataset-green)](https://huggingface.co/datasets/Qinsi1/Vision-Zero-clevr-dataset)
 
-![Overview](self-play-taste.png)
+![Overview](self-play-teaser.png)
 
 *A domain-agnostic framework enabling VLM self-improvement through competitive visual games*
 
