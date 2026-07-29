@@ -261,14 +261,10 @@ We use [VLMEvalKit](https://github.com/open-compass/VLMEvalKit) for comprehensiv
 If you find Vision-Zero useful in your research, please consider citing our paper:
 
 ```bibtex
-@misc{wang2025visionzeroscalablevlmselfimprovement,
-    title={Vision-Zero: Scalable VLM Self-Improvement via Strategic Gamified Self-Play}, 
-    author={Qinsi Wang and Bo Liu and Tianyi Zhou and Jing Shi and Yueqian Lin and Yiran Chen and Hai Helen Li and Kun Wan and Wentian Zhao},
-    year={2025},
-    eprint={2509.25541},
-    archivePrefix={arXiv},
-    primaryClass={cs.CV},
-    url={https://arxiv.org/abs/2509.25541}
+@inproceedings{wangvision,
+  title={Vision-Zero: Scalable VLM Self-Evolution via Multi-Agent Self-Play},
+  author={Wang, Qinsi and Liu, Bo and Zhou, Tianyi and Shi, Jing and Lin, Yueqian and Chen, Yiran and Li, Hai Helen and Wan, Kun and Zhao, Wentian},
+  booktitle={The Fourteenth International Conference on Learning Representations}
 }
 ```
 
