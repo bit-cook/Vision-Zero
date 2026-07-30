@@ -16,6 +16,12 @@
 
 </div>
 
+> ### 🕵️ This repository also hosts **SpyRL** (COLM 2026)
+> **[From RLVR to RLSVR: Task Transformation Induces Self-Verifiable Rewards for Open-Ended LLM Self-Improvement](https://github.com/wangqinsi1/RLSVR/tree/SpyRL)** —
+> extending self-play beyond verifiable domains to summarization, creative writing and mathematical
+> reasoning on text LLMs.
+> **→ Code on the [`SpyRL`](https://github.com/wangqinsi1/RLSVR/tree/SpyRL) branch · Models at [🤗 SpyRL](https://huggingface.co/SpyRL)**
+
 ## 📋 Table of Contents
 
 - [🎯 Overview](#-overview)
