@@ -267,10 +267,13 @@ We use [VLMEvalKit](https://github.com/open-compass/VLMEvalKit) for comprehensiv
 If you find Vision-Zero useful in your research, please consider citing our paper:
 
 ```bibtex
-@inproceedings{wangvision,
+@inproceedings{wang2026vision,
   title={Vision-Zero: Scalable VLM Self-Evolution via Multi-Agent Self-Play},
-  author={Wang, Qinsi and Liu, Bo and Zhou, Tianyi and Shi, Jing and Lin, Yueqian and Chen, Yiran and Li, Hai Helen and Wan, Kun and Zhao, Wentian},
-  booktitle={The Fourteenth International Conference on Learning Representations}
+  author={Wang, Qinsi and Liu, Bo and Zhou, Tianyi and Shi, Jing and Lin, Yueqian and Chen, Yiran and Li, Hai and Wan, Kun and Zhao, Wentian},
+  booktitle={International Conference on Learning Representations},
+  volume={2026},
+  pages={106716--106744},
+  year={2026}
 }
 ```
 
