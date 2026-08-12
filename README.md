@@ -330,7 +330,7 @@ Every knob has a default; override the common ones through the environment:
 
 | Variable | Default | Meaning |
 |---|---|---|
-| `SPYRL_MODEL` | `Qwen/Qwen3-4B-Instruct-2507` | Base model for the actor and the reference policy |
+| `SPYRL_MODEL` | `Qwen/Qwen3-4B-Base` | Base model for the actor and the reference policy |
 | `SPYRL_OUTPUT_DIR` | `./outputs` | Where checkpoints and rollout transcripts land |
 | `SPYRL_NUM_GPUS` / `SPYRL_NNODES` | `8` / `1` | GPUs per node (also the vLLM tensor-parallel size), nodes |
 | `NUM_PLAYERS` | `5` (4 for GovReport) | Group size `n` |
